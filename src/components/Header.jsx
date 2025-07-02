@@ -37,6 +37,21 @@ const Header = () => {
           </NavLink>
 
           {user ? (
+            <NavLink className="hidden md:flex" to="/manage-events">
+              Manage Events
+            </NavLink>
+          ) : (
+            ""
+          )}
+          {user ? (
+            <NavLink className="hidden md:flex" to="/joined-events">
+              Joined Events
+            </NavLink>
+          ) : (
+            ""
+          )}
+
+          {user ? (
             <button
               onClick={handleLogout}
               className="btn border-orange-500 text-orange-500 hidden md:flex"

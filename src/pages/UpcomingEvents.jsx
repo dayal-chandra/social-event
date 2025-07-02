@@ -1,28 +1,3 @@
-// import React, { useEffect } from "react";
-// import { useLoaderData } from "react-router";
-// import EventCard from "../components/EventCard";
-
-// const UpcomingEvents = () => {
-//   useEffect(() => {
-//     document.title = "Neighborly | UpcomingEvents";
-//   }, []);
-
-//   const events = useLoaderData();
-
-//   return (
-//     <div className="max-w-[1280px] mx-auto px-5 pb-10">
-//       <h1 className="text-3xl font-bold text-center py-5">Upcoming Events</h1>
-//       <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 ">
-//         {events.map((event, index) => (
-//           <EventCard key={index} event={event}></EventCard>
-//         ))}
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default UpcomingEvents;
-
 import React, { useEffect, useState, useCallback } from "react";
 import { useLoaderData } from "react-router";
 import EventCard from "../components/EventCard";
@@ -53,7 +28,7 @@ const UpcomingEvents = () => {
       setSortedEvents(sorted);
     },
     [events]
-  ); // Only depends on events
+  );
 
   useEffect(() => {
     handleSort(sortOption);
@@ -63,7 +38,6 @@ const UpcomingEvents = () => {
     <div className="max-w-[1280px] mx-auto px-5 pb-10">
       <h1 className="text-3xl font-bold text-center py-5">Upcoming Events</h1>
 
-      {/* Sorting Dropdown */}
       <div className="flex justify-end mb-5">
         <select
           value={sortOption}
@@ -77,7 +51,6 @@ const UpcomingEvents = () => {
         </select>
       </div>
 
-      {/* Events Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
         {sortedEvents.map((event, index) => (
           <EventCard key={index} event={event} />
