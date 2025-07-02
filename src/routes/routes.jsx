@@ -12,6 +12,7 @@ import EventDetails from "../pages/EventDetails";
 import UpdateEvent from "../pages/UpdateEvent";
 import ErrorPage from "../pages/ErrorPage";
 import Loading from "../components/Loading";
+import AboutUs from "../pages/AboutUs";
 
 export const router = createBrowserRouter([
   {
@@ -47,6 +48,10 @@ export const router = createBrowserRouter([
       {
         path: "/register",
         Component: Register,
+      },
+      {
+        path: "/about",
+        Component: AboutUs,
       },
       {
         path: "/create-event",

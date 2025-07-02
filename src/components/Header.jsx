@@ -21,7 +21,7 @@ const Header = () => {
 
   return (
     <div className="navbar fixed py-0 px-2 md:px-20 bg-base-100 ">
-      <div className="navbar-start">
+      <div className="navbar-start md:w-1/4">
         <Link to="/">
           <div className="flex justify-center items-center gap-2">
             <img className="w-10" src={logo} alt="" />
@@ -30,7 +30,7 @@ const Header = () => {
         </Link>
       </div>
 
-      <div className="navbar-end space-x-5">
+      <div className="navbar-end md:w-9/12 space-x-5">
         <div className="flex justify-center items-center gap-5 font-semibold">
           <NavLink className="p-2 hidden md:flex" to="/upcoming-events">
             Upcoming Events{" "}
@@ -50,6 +50,9 @@ const Header = () => {
           ) : (
             ""
           )}
+          <NavLink className="p-2 hidden md:flex" to="/about">
+            About Us
+          </NavLink>
 
           {user ? (
             <button
