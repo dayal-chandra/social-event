@@ -73,7 +73,7 @@ const ManageEvent = () => {
                 <td>{singleEvent.title}</td>
                 <td>{singleEvent.location}</td>
                 <td>
-                  <div className="space-x-5">
+                  <div className="flex justify-center items-center gap-5">
                     <Link to={`/event-details/${singleEvent._id}`}>
                       <button>
                         <FaCircleInfo size={25} />
