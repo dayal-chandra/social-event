@@ -20,7 +20,7 @@ const Header = () => {
   };
 
   return (
-    <div className="navbar py-0 px-2 md:px-20 bg-base-100 ">
+    <div className="navbar fixed py-0 px-2 md:px-20 bg-base-100 ">
       <div className="navbar-start">
         <Link to="/">
           <div className="flex justify-center items-center gap-2">

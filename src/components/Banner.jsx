@@ -10,7 +10,7 @@ const Banner = () => {
   return (
     <div>
       <div className="carousel w-full">
-        <div id="slide1" className="carousel-item relative w-full h-[550px] ">
+        <div id="slide1" className="carousel-item relative w-full h-[450px] ">
           <img src={slide1} className="w-full object-cover" />
           <div
             className="absolute inset-0"
@@ -55,7 +55,7 @@ const Banner = () => {
             </a>
           </div>
         </div>
-        <div id="slide2" className="carousel-item relative w-full h-[550px]">
+        <div id="slide2" className="carousel-item relative w-full h-[450px]">
           <img src={slide2} className="w-full object-cover" />
           <div
             className="absolute inset-0"
@@ -102,7 +102,7 @@ const Banner = () => {
             </a>
           </div>
         </div>
-        <div id="slide3" className="carousel-item relative w-full h-[550px]">
+        <div id="slide3" className="carousel-item relative w-full h-[450px]">
           <img src={slide3} className="w-full object-cover" />
           <div
             className="absolute inset-0"
@@ -146,7 +146,7 @@ const Banner = () => {
             </a>
           </div>
         </div>
-        <div id="slide4" className="carousel-item relative w-full h-[550px]">
+        <div id="slide4" className="carousel-item relative w-full h-[450px]">
           <img src={slide4} className="w-full object-cover" />
           <div
             className="absolute inset-0"

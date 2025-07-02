@@ -2,7 +2,7 @@ import React from "react";
 
 const Features = () => {
   return (
-    <div className=" md:py-30">
+    <div className=" md:py-16">
       <section className="py-12 bg-base-100">
         <div className="max-w-6xl mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-6">Key Features</h2>
