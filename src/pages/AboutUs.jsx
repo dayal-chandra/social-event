@@ -67,7 +67,7 @@ const AboutUs = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
           <div className="p-4">
             <img
-              src="https://via.placeholder.com/150"
+              src="https://i.ibb.co/JNrqvmG/8221d27d-78f4-458f-b1f6-b58e24f0303e.webp"
               alt="Founder"
               className="mx-auto rounded-full mb-4"
             />
@@ -77,7 +77,7 @@ const AboutUs = () => {
 
           <div className="p-4">
             <img
-              src="https://via.placeholder.com/150"
+              src="https://i.ibb.co/hxF8pK5x/307c7754-f11e-4012-837c-c319b2412ee7.webp"
               alt="Developer"
               className="mx-auto rounded-full mb-4"
             />
@@ -87,7 +87,7 @@ const AboutUs = () => {
 
           <div className="p-4">
             <img
-              src="https://via.placeholder.com/150"
+              src="https://i.ibb.co/cfWcfv6/a452db3f-6933-4628-a1b5-6db1cb873fbf.webp"
               alt="Community Manager"
               className="mx-auto rounded-full mb-4"
             />
